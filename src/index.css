@@ -1,0 +1,253 @@
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+  /* AjouterDetailsFacture */
+
+.AjouterDetailsFacture {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.AjouterDetailsFacture h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.AjouterDetailsFacture form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.AjouterDetailsFacture input,
+.AjouterDetailsFacture select,
+.AjouterDetailsFacture button {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.AjouterDetailsFacture input,
+.AjouterDetailsFacture select {
+  flex: 1;
+  min-width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.AjouterDetailsFacture button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.AjouterDetailsFacture button:disabled {
+  background-color: #ccc;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  position: relative; /* Add this line */
+}
+
+.popup-inner h2 {
+  margin-top: 0;
+}
+
+.popup-inner form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-inner input,
+.popup-inner button {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.popup-inner button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-inner button[type="button"] {
+  background-color: #f44336;
+  position: absolute; 
+  top: 5px; 
+  right: 8px; 
+  width: 25px; 
+  height: 25px; 
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.popup-inner button[type="button"]::before {
+  content: '✖'; 
+}
+
+/* ArticleList*/
+.ArticleList {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.ArticleList h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ArticleList button {
+  align-self: flex-end; 
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px; 
+}
+
+.ArticleList button:hover {
+  background-color: #45a049;
+}
+
+.ArticleList .articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Article*/
+
+.Article {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  
+}
+
+.Article select,
+.Article input {
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.Article input[readonly] {
+  background-color: #e9ecef;
+}
+
+.Article select {
+  width: 80px;
+}
+
+.Article input {
+  width: 100px;
+}
+
+.Article input[name="quantity"] {
+  width: 80px;
+}
+.FactureList {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.FactureList h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.FactureList table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.FactureList th,
+.FactureList td {
+  padding: 10px;
+  text-align: center;
+}
+
+.FactureList th {
+  background-color: #5481a8;
+  color: white;
+}
+
+.FactureList button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.FactureList button:hover {
+  background-color: #45a049;
+}
+
+.FactureList .details-table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.FactureList .details-table th,
+.FactureList .details-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.FactureList .details-table th {
+  background-color: #5481a8;
+  color: white;
+}
+
+
+
