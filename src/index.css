@@ -69,7 +69,7 @@ h1{
   padding: 20px;
   border-radius: 5px;
   width: 300px;
-  position: relative; /* Add this line */
+  position: relative;
 }
 
 .popup-inner h2 {
