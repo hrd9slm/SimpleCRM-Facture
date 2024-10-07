@@ -73,7 +73,7 @@ class Article extends Component {
 
   handleInputChange = (e) => {
     const { name, value } = e.target;
-    this.setState({ [name]: parseFloat(value) || 0 }, () => {
+    this.setState({ [name]: parseInt(value) || 0 }, () => {
       this.calculateAmount();
       this.props.onArticleUpdate({
         ...this.props.article,
